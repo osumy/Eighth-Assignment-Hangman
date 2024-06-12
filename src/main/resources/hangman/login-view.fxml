@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.LoginView">
+   <children>
+      <TextField fx:id="username" layoutX="211.0" layoutY="127.0" prefHeight="50.0" prefWidth="220.0" promptText="Username" style="-fx-background-color: GhostWhite;">
+         <font>
+            <Font name="Calibri Light" size="22.0" />
+         </font>
+      </TextField>
+      <Label layoutX="295.0" layoutY="65.0" text="Login" textFill="#ff2700">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="261.0" layoutY="313.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: GhostWhite; -fx-background-radius: 15;" text="Login">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="returnBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnMain" prefHeight="45.0" prefWidth="40.0" style="-fx-shape: &quot;M563.2 715.946667a33.9968 33.9968 0 0 1-24.132267-10.001067l-170.666666-170.666667a34.133333 34.133333 0 0 1 0-48.264533l170.666666-170.666667a34.133333 34.133333 0 1 1 48.264534 48.264534l-146.517334 146.5344 146.517334 146.5344A34.133333 34.133333 0 0 1 563.2 715.946667z&quot;;" />
+      <PasswordField layoutX="211.0" layoutY="215.0" prefHeight="50.0" prefWidth="220.0" promptText="Password" style="-fx-background-color: GhostWhite;">
+         <font>
+            <Font name="Calibri Light" size="22.0" />
+         </font></PasswordField>
+   </children>
+</Pane>
