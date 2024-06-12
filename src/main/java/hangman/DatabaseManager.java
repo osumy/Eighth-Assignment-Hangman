@@ -181,10 +181,10 @@ public class DatabaseManager {
                 else {
                     winBool = false;
                 }
-                records.add(resultSet.getString("Word: " + resultSet.getString("Word") + "      " +
+                records.add("Word: " + resultSet.getString("Word") + "      " +
                                                             "WrongGuesses: " + resultSet.getInt("WrongGuesses") + "      " +
                                                             "Time: " + resultSet.getInt("Time") + "     " +
-                                                            "Win: " + Boolean.toString(winBool)));
+                                                            "Win: " + winBool);
             }
         }
         connection.close();
