@@ -9,11 +9,13 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 public class MyGamesView {
 
     @FXML
-    private ListView<String> records;
+    private ListView<String> recordsList;
 
     public void returnMainMenu(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HangmanApp.class.getResource("main-view.fxml"));
@@ -25,7 +27,10 @@ public class MyGamesView {
     }
 
     @FXML
-    public void initialize() {
-
+    public void initialize() throws SQLException {
+        List<String> records = DatabaseManager.myGames(HangmanApp.user.getUsername());
+        for (String record : records) {
+            recordsList.getItems().add(record);
+        }
     }
 }
