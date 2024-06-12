@@ -21,9 +21,19 @@
             <Font name="Calibri Light" size="18.0" />
          </font></Button>
       <Button fx:id="returnBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnMain" prefHeight="45.0" prefWidth="40.0" style="-fx-shape: &quot;M563.2 715.946667a33.9968 33.9968 0 0 1-24.132267-10.001067l-170.666666-170.666667a34.133333 34.133333 0 0 1 0-48.264533l170.666666-170.666667a34.133333 34.133333 0 1 1 48.264534 48.264534l-146.517334 146.5344 146.517334 146.5344A34.133333 34.133333 0 0 1 563.2 715.946667z&quot;;" />
-      <PasswordField layoutX="211.0" layoutY="215.0" prefHeight="50.0" prefWidth="220.0" promptText="Password" style="-fx-background-color: GhostWhite;">
+      <PasswordField fx:id="password" layoutX="211.0" layoutY="215.0" prefHeight="50.0" prefWidth="220.0" promptText="Password" style="-fx-background-color: GhostWhite;">
          <font>
             <Font name="Calibri Light" size="22.0" />
          </font></PasswordField>
+      <Label fx:id="user404" layoutX="448.0" layoutY="143.0" text="Not Found!" textFill="RED" visible="false">
+         <font>
+            <Font name="Calibri Light" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="pass404" layoutX="449.0" layoutY="229.0" text="Incorrect!" textFill="RED" visible="false">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
