@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="hangman.MyGamesView"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.MyGamesView">
+   <children>
+      <Label layoutX="273.0" layoutY="34.0" text="My Games" textFill="#ff3000">
+         <font>
+            <Font name="Calibri Light" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="26.0" mnemonicParsing="false" onAction="#returnMainMenu" prefHeight="42.0" prefWidth="45.0" style="-fx-shape: &quot;M563.2 715.946667a33.9968 33.9968 0 0 1-24.132267-10.001067l-170.666666-170.666667a34.133333 34.133333 0 0 1 0-48.264533l170.666666-170.666667a34.133333 34.133333 0 1 1 48.264534 48.264534l-146.517334 146.5344 146.517334 146.5344A34.133333 34.133333 0 0 1 563.2 715.946667z&quot;;" />
+      <ListView fx:id="records" layoutX="33.0" layoutY="90.0" prefHeight="359.0" prefWidth="570.0" />
+   </children>
+</Pane>
