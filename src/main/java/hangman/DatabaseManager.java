@@ -147,9 +147,10 @@ public class DatabaseManager {
 
         while (resultSet2.next()){
             for (int i = 0; i < users.size(); i++){
-                if (resultSet2.getString("Username").equals(users.get(i))){
+                if (resultSet2.getString("Username").equals(users.get(i)) && resultSet2.getInt("Win") == 1){
                     int X = wins.get(i) + 1;
                     wins.set(i, X);
+                    break;
                 }
             }
         }
