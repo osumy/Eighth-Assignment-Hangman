@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.LeaderboardView">
+   <children>
+      <Label layoutX="264.0" layoutY="35.0" text="Leaderboard" textFill="#ff2300">
+         <font>
+            <Font name="Calibri Light" size="22.0" />
+         </font>
+      </Label>
+      <ListView fx:id="recordsList" layoutX="21.0" layoutY="75.0" prefHeight="379.0" prefWidth="594.0" style="-fx-background-color: GhostWhite;" />
+      <Button layoutX="21.0" layoutY="13.0" mnemonicParsing="false" onAction="#returnBtn" prefHeight="45.0" prefWidth="45.0" style="-fx-shape: &quot;M563.2 715.946667a33.9968 33.9968 0 0 1-24.132267-10.001067l-170.666666-170.666667a34.133333 34.133333 0 0 1 0-48.264533l170.666666-170.666667a34.133333 34.133333 0 1 1 48.264534 48.264534l-146.517334 146.5344 146.517334 146.5344A34.133333 34.133333 0 0 1 563.2 715.946667z&quot;;" />
+   </children>
+</Pane>

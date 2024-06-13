@@ -4,6 +4,7 @@ module hangman {
 
     requires com.dlsc.formsfx;
     requires java.sql;
+    requires org.apache.commons.codec;
 
     opens hangman to javafx.fxml;
     exports hangman;
